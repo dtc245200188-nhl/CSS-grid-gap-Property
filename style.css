@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    margin-bottom: 25px;
+}
+
+.example {
+    margin-bottom: 40px;
+}
+
+.example h2 {
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+}
+
+code {
+    background-color: #eee;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+.grid-container {
+    display: grid;
+}
+
+/* ===== Ví dụ 1: khoảng cách 20px cho cả hàng và cột ===== */
+.grid-container-1 {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px; /* tương đương grid-row-gap: 20px; grid-column-gap: 20px; */
+}
+
+.grid-container-1 div {
+    background-color: lightblue;
+    padding: 20px;
+    text-align: center;
+}
+
+/* ===== Ví dụ 2: khoảng cách hàng 30px, cột 10px ===== */
+.grid-container-2 {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px 10px; /* tương đương grid-row-gap: 30px; grid-column-gap: 10px; */
+}
+
+.grid-container-2 div {
+    background-color: lightgreen;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Lưu ý: CSS hiện đại có thể viết ngắn gọn hơn bằng "gap",
+   ví dụ: gap: 30px 10px; (dùng được cho cả Grid và Flexbox). */
